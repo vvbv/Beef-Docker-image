@@ -8,6 +8,7 @@ RUN apt install git sudo xterm bundler -y
 RUN git clone https://github.com/beefproject/beef.git
 ENV TERM=xterm
 WORKDIR /beef
-RUN yes | ./install
+RUN yes | /bin/bash install
+RUN yes | /bin/bash updated-geoipdb
 
 CMD /bin/bash

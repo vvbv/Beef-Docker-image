@@ -9,6 +9,6 @@ RUN git clone https://github.com/beefproject/beef.git
 ENV TERM=xterm
 WORKDIR /beef
 RUN yes | /bin/bash install
-RUN yes | /bin/bash updated-geoipdb
+RUN yes | /bin/bash update-geoipdb
 
 CMD /bin/bash

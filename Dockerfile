@@ -1,4 +1,4 @@
-FROM ruby:2.4
+FROM ruby:2.5.3
 
 ARG USERNAME=root
 ARG PASSWORD=root
